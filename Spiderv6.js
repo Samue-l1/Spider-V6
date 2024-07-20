@@ -1277,7 +1277,7 @@ deltaxcrash.sendMessage(m.chat, {
                  break
 		
 case "owner": {
-const repf = await deltacrash.sendMessage(from, { 
+const repf = await deltaxcrash.sendMessage(from, { 
 contacts: { 
 displayName: `${list.length} Kontak`, 
 contacts: list }, contextInfo: {
