@@ -1038,10 +1038,10 @@ let itsmenu = `
                             showAdAttribution: false,
                             title: global.namabot,
                             body: global.namaCreator,
-                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            thumbnailUrl: 'https://telegra.ph/file/2aa73d1edccfea6961310.mp4', 
                             sourceUrl: global.isLink,
                             mediaType: 1,
-                            renderLargerThumbnail: true
+                            renderLargerThumbnail: false
                         }
                     }
                 }, {
