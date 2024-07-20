@@ -49,32 +49,33 @@ if (isCmd) {
 console.log(chalk.white.bgRed.bold('Massage'), color(`[𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6H]`, `green`), color(`FROM`, `red`), color(`${pushname}`, `red`), color(`Text :`, `yellow`), color(`${body}`, `blue`))
 }
         // HARI
-        const hariini = moment.tz('Asia/Jakarta').format('dddd, DD MMMM YYYY')
-        const wib = moment.tz('Asia/Jakarta').format('HH : mm :ss')
-        const wit = moment.tz('Asia/Jayapura').format('HH : mm : ss')
-        const wita = moment.tz('Asia/Makassar').format('HH : mm : ss')
+        
+        const hariini = moment.tz('Africa/Nairobi').format('dddd, DD MMMM YYYY')
+        const wib = moment.tz('Africa/Nairobi').format('HH : mm :ss')
+        const wit = moment.tz('Africa/Nairobi').format('HH : mm : ss')
+        const wita = moment.tz('Africa/Nairobi').format('HH : mm : ss')
 
-        const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
+        const time2 = moment().tz('Africa/Nairobi').format('HH:mm:ss')
         if (time2 < "23:59:00") {
-            var ucapanWaktu = 'Selamat Malam 🏙️'
+            var ucapanWaktu = 'Good night 🏙️'
         }
         if (time2 < "19:00:00") {
-            var ucapanWaktu = 'Selamat Petang 🌆'
+            var ucapanWaktu = 'Good afternoon 🌆'
         }
         if (time2 < "18:00:00") {
-            var ucapanWaktu = 'Selamat Sore 🌇'
+            var ucapanWaktu = 'Good afternoon 🌇'
         }
         if (time2 < "15:00:00") {
-            var ucapanWaktu = 'Selamat Siang 🌤️'
+            var ucapanWaktu = 'Good afternoon 🌤️'
         }
         if (time2 < "10:00:00") {
-            var ucapanWaktu = 'Selamat Pagi 🌄'
+            var ucapanWaktu = 'Good morning 🌄'
         }
         if (time2 < "05:00:00") {
-            var ucapanWaktu = 'Selamat Subuh 🌆'
+            var ucapanWaktu = 'Enjoy Subuh 🌆'
         }
         if (time2 < "03:00:00") {
-            var ucapanWaktu = 'Selamat Tengah Malam 🌃'
+            var ucapanWaktu = 'Good midnight 🌃'
         }
         
 // Read Database
