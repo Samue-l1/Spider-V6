@@ -1029,12 +1029,24 @@ let itsmenu = `
 ┗━━━━━━━━━━
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
   ` 
-  deltaxcrash.sendMessage(m.chat, {
-                        photo: fs.readFileSync('./image/nulll.jpg'),
-                        caption: itsmenu,
-                        gifPlayback: true
-                    }, { quoted: m })	}
-                break
+  deltaxcrash.sendMessage(m.chat, { 
+	           text: itsmenu,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            //sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+                 break
  case 'spiderbugs':{
 let menya =
  `   \`𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
@@ -1068,12 +1080,24 @@ let menya =
 ┗━━━━━━━━━━━━━━━━━
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  `
-deltaxcrash.sendMessage(m.chat, {
-                        photo: fs.readFileSync('./image/nulll.jpg'),
-                        caption: menya,
-                        gifPlayback: true
-                    }, { quoted: m })	}
-                break
+deltaxcrash.sendMessage(m.chat, { 
+	           text: menya,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            //sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+                 break
  case 'groupbugs':{
  let menyu =
 `   \`𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
@@ -1091,12 +1115,24 @@ deltaxcrash.sendMessage(m.chat, {
  ● 𝑫𝒐𝒏𝒕 𝒃𝒍𝒂𝒎𝒆 𝒎𝒆 𝒊𝒏𝒄𝒂𝒔𝒆 𝒚𝒐𝒖𝒓 𝒘𝒉𝒂𝒕𝒔𝒂𝒑𝒑 𝒊𝒔 𝒂𝒍𝒔𝒐 𝒂𝒇𝒇𝒆𝒄𝒕𝒆𝒅
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  `
-deltaxcrash.sendMessage(m.chat, {                        
-                        photo: fs.readFileSync('./image/nulll.jpg'),
-                        caption: menyu,
-                        gifPlayback: true
-                    }, { quoted: m })	}
-                break
+deltaxcrash.sendMessage(m.chat, { 
+	           text: menyu,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            //sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+                 break
  case 'ownermenu':{
  let muna =
  `   \`𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
@@ -1114,12 +1150,24 @@ deltaxcrash.sendMessage(m.chat, {
 ┗━━━━━━━━━━━━━━━━━
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  ` 
-deltaxcrash.sendMessage(m.chat, {                        
-                        photo: fs.readFileSync('./image/nulll.jpg'),
-                        caption: muna,
-                        gifPlayback: true
-                    }, { quoted: m })	}
-                break
+deltaxcrash.sendMessage(m.chat, { 
+	           text: muna,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            //sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+                 break
  case 'othermenu':{
 let fuvk =
  `   \`𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
@@ -1136,12 +1184,24 @@ let fuvk =
 ┗━━━━━━━━━━━━━━━━━
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  `
-deltaxcrash.sendMessage(m.chat, {                     
-                        photo: fs.readFileSync('./image/nulll.jpg'),
-                        caption: fuvk,
-                        gifPlayback: true
-                    }, { quoted: m })	}
-                break
+deltaxcrash.sendMessage(m.chat, { 
+	           text: fuvk,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            //sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+                 break
      
 case "kill-spider": {
 if (!isPremium) return reply('_</> Can only be used by premium users..._')
