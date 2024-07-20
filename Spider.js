@@ -1067,7 +1067,8 @@ let menya =
 ┃⬮ sam-bug <254xxx>
 ┗━━━━━━━━━━━━━━━━━
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
- ` deltaxcrash.sendMessage(m.chat, {
+ `
+deltaxcrash.sendMessage(m.chat, {
                         video: fs.readFileSync('./menu.mp4'),
                         caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
                         gifPlayback: true
@@ -1089,7 +1090,8 @@ let menya =
 ┗━━━━━━━━━━━━━━━━━
  ● 𝑫𝒐𝒏𝒕 𝒃𝒍𝒂𝒎𝒆 𝒎𝒆 𝒊𝒏𝒄𝒂𝒔𝒆 𝒚𝒐𝒖𝒓 𝒘𝒉𝒂𝒕𝒔𝒂𝒑𝒑 𝒊𝒔 𝒂𝒍𝒔𝒐 𝒂𝒇𝒇𝒆𝒄𝒕𝒆𝒅
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
- ` deltaxcrash.sendMessage(m.chat, {
+ `
+deltaxcrash.sendMessage(m.chat, {
                         video: fs.readFileSync('./menu.mp4'),
                         caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
                         gifPlayback: true
@@ -1111,7 +1113,8 @@ let menya =
 ┃⬮ buypanel
 ┗━━━━━━━━━━━━━━━━━
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
- ` deltaxcrash.sendMessage(m.chat, {
+ ` 
+deltaxcrash.sendMessage(m.chat, {
                         video: fs.readFileSync('./menu.mp4'),
                         caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
                         gifPlayback: true
@@ -1132,7 +1135,8 @@ let fuvk =
 ┃⬮ animeku
 ┗━━━━━━━━━━━━━━━━━
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
- `deltaxcrash.sendMessage(m.chat, {
+ `
+deltaxcrash.sendMessage(m.chat, {
                         video: fs.readFileSync('./menu.mp4'),
                         caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
                         gifPlayback: true
