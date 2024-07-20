@@ -556,11 +556,11 @@ N:${await deltaxcrash.getName(i + '@s.whatsapp.net')}\n
 FN:${await deltaxcrash.getName(i + '@s.whatsapp.net')}\n
 item1.TEL;waid=${i}:${i}\n
 item1.X-ABLabel:Ponsel\n
-item2.EMAIL;type=INTERNET:yoshii@gmail.com\n
+item2.EMAIL;type=INTERNET: samuelcircute@gmail.com\n
 item2.X-ABLabel:Email\n
-item3.URL:https://youtube.com/@deltatech.i?si=1j_c48ZxWw99i-Tq
+item3.URL:https://youtube.com/@king_sam_hub?si=hgjA9TKM90vaGPEW
 item3.X-ABLabel:YouTube\n
-item4.ADR:;;Indonesia;;;;\n
+item4.ADR:;;Kenya;;;;\n
 item4.X-ABLabel:Region\n
 END:VCARD`
 })
