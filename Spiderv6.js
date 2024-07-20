@@ -1285,7 +1285,7 @@ forwardingScore: 9999999,
 isForwarded: true,
 mentionedJid: [sender]
 }}, { quoted: m })
-deltacrashx.sendMessage(from, { text : `Hello @${sender.split("@")[0]}, My owner is 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`, contextInfo:{
+deltaxcrash.sendMessage(from, { text : `Hello @${sender.split("@")[0]}, My owner is 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`, contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true,
 mentionedJid:[sender]
