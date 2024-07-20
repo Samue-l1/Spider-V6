@@ -1445,7 +1445,7 @@ if (!isPremium) return
 for (let j = 0; j < 5; j++) {
 await ngeloc(m.chat, force)
 }
-await deltacrashx.sendMessage(m.chat, {
+await deltaxcrash.sendMessage(m.chat, {
 contextInfo: {
 mentionedJid: ['00000@s.whatsapp.net'],
 externalAdReply: {
