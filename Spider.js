@@ -995,7 +995,7 @@ const menu = `𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6`
                             title: global.namabot,
                             body: global.namaCreator,
                             thumbnailUrl: 'https://telegra.ph/file/7614a322cb75d2a63105a.jpg', 
-                            //sourceUrl: global.isLink,
+                            sourceUrl: global.isLink,
                             mediaType: 1,
                             renderLargerThumbnail: true
                         }
@@ -1037,7 +1037,7 @@ let itsmenu = `
                             title: global.namabot,
                             body: global.namaCreator,
                             thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
-                            //sourceUrl: global.isLink,
+                            sourceUrl: global.isLink,
                             mediaType: 1,
                             renderLargerThumbnail: true
                         }
@@ -1088,7 +1088,7 @@ deltaxcrash.sendMessage(m.chat, {
                             title: global.namabot,
                             body: global.namaCreator,
                             thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
-                            //sourceUrl: global.isLink,
+                            sourceUrl: global.isLink,
                             mediaType: 1,
                             renderLargerThumbnail: true
                         }
@@ -1123,7 +1123,7 @@ deltaxcrash.sendMessage(m.chat, {
                             title: global.namabot,
                             body: global.namaCreator,
                             thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
-                            //sourceUrl: global.isLink,
+                            sourceUrl: global.isLink,
                             mediaType: 1,
                             renderLargerThumbnail: true
                         }
@@ -1158,7 +1158,7 @@ deltaxcrash.sendMessage(m.chat, {
                             title: global.namabot,
                             body: global.namaCreator,
                             thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
-                            //sourceUrl: global.isLink,
+                            sourceUrl: global.isLink,
                             mediaType: 1,
                             renderLargerThumbnail: true
                         }
@@ -1192,7 +1192,7 @@ deltaxcrash.sendMessage(m.chat, {
                             title: global.namabot,
                             body: global.namaCreator,
                             thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
-                            //sourceUrl: global.isLink,
+                            sourceUrl: global.isLink,
                             mediaType: 1,
                             renderLargerThumbnail: true
                         }
