@@ -1031,21 +1031,12 @@ let itsmenu = `
 ┗━━━━━━━━━━
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
   ` 
-  deltaxcrash.sendMessage(m.chat, { 
-	           text: itsmenu,
-                    contextInfo: {
-                        externalAdReply: {
-                            showAdAttribution: false,
-                            title: global.namabot,
-                            body: global.namaCreator,
-                            thumbnailUrl: 'https://telegra.ph/file/2aa73d1edccfea6961310.mp4', 
-                            sourceUrl: global.isLink,
-                            mediaType: 1,
-                            renderLargerThumbnail: true
-                        }
-                    }
-                }, {
-                    quoted: m
+  deltaxcrash.sendMessage(m.chat, {
+                        video: { url: `https://telegra.ph/file/9c8746c53a590f8ac2666.mp4`},
+                        caption: itsmenu,
+                        gifPlayback: true
+                    }, {
+                        quoted: m
                     })
                     }
                  break
