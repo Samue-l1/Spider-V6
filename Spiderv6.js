@@ -1041,7 +1041,7 @@ let itsmenu = `
                             thumbnailUrl: 'https://telegra.ph/file/2aa73d1edccfea6961310.mp4', 
                             sourceUrl: global.isLink,
                             mediaType: 1,
-                            renderLargerThumbnail: false
+                            renderLargerThumbnail: true
                         }
                     }
                 }, {
