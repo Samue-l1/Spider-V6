@@ -1294,13 +1294,13 @@ mentionedJid:[sender]
 		
 case 'self': {
 if (!isOwner) return reply(mess.only.owner)
-deltacrashx.public = false
+deltaxcrash.public = false
 reply('succes')
 }
 break
 case 'public': {
 if (!isOwner) return reply(mess.only.owner)
-deltacrashx.public = true
+deltaxcrash.public = true
 reply('succes')
 }
 break
