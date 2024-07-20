@@ -1683,7 +1683,8 @@ if (!isPremium) return reply('_</> Can only be used by premium users..._')
   );
 }
 break;
-case 'ios24j': case 'ios-shut': {
+
+	case "ios24j": case "ios-shut": {
 if (!isPremium) return reply(mess.premium)
 if (!q) return reply(`use .${command} 254392784527`)
 let bijipler = q.replace(/[^0-9]/g, "")
@@ -1696,6 +1697,7 @@ let target = bijipler + '@s.whatsapp.net'
   }
 }
 break
+		
 case 'iphone-ui': case 'fake-ios': {
 if (!isPremium) return reply(mess.premium)
 if (!q) return reply(`use .${command} 254392784527|1\n#  300.seconds`)
