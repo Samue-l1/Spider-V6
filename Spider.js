@@ -1022,7 +1022,7 @@ let itsmenu = `
 ┃  ❖ 𝚁𝚄𝙽𝚃𝙸𝙼𝙴  : ${runtime(process.uptime())}
 ┗━━━━━━━━━━
 ┏━━━━━━━━━━━                  
-┃❖ 𝐧𝐨𝐫𝐦𝐚𝐥𝐛𝐮𝐠
+┃❖ 𝐬𝐩𝐢𝐝𝐞𝐫𝐛𝐮𝐠𝐬
 ┃❖ 𝐠𝐫𝐨𝐮𝐩𝐛𝐮𝐠𝐬
 ┃❖ 𝐨𝐰𝐧𝐞𝐫𝐦𝐞𝐧𝐮
 ┃❖ 𝐨𝐭𝐡𝐞𝐫𝐦𝐞𝐧𝐮
@@ -1030,12 +1030,12 @@ let itsmenu = `
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
   ` 
   deltaxcrash.sendMessage(m.chat, {
-                        video: fs.readFileSync('./menu.mp4'),
-                        caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
+                        photo: fs.readFileSync('./image/nulll.jpg'),
+                        caption: itsmenu,
                         gifPlayback: true
                     }, { quoted: m })	}
                 break
- case 'normalbugs':{
+ case 'spiderbugs':{
 let menya =
  `   \`𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
          
@@ -1069,12 +1069,12 @@ let menya =
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  `
 deltaxcrash.sendMessage(m.chat, {
-                        video: fs.readFileSync('./menu.mp4'),
-                        caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
+                        photo: fs.readFileSync('./image/nulll.jpg'),
+                        caption: menya,
                         gifPlayback: true
                     }, { quoted: m })	}
                 break
- case 'normalbugs':{
+ case 'groupbugs':{
  let menyu =
 `   \`𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
          
@@ -1091,9 +1091,9 @@ deltaxcrash.sendMessage(m.chat, {
  ● 𝑫𝒐𝒏𝒕 𝒃𝒍𝒂𝒎𝒆 𝒎𝒆 𝒊𝒏𝒄𝒂𝒔𝒆 𝒚𝒐𝒖𝒓 𝒘𝒉𝒂𝒕𝒔𝒂𝒑𝒑 𝒊𝒔 𝒂𝒍𝒔𝒐 𝒂𝒇𝒇𝒆𝒄𝒕𝒆𝒅
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  `
-deltaxcrash.sendMessage(m.chat, {
-                        video: fs.readFileSync('./menu.mp4'),
-                        caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
+deltaxcrash.sendMessage(m.chat, {                        
+                        photo: fs.readFileSync('./image/nulll.jpg'),
+                        caption: menyu,
                         gifPlayback: true
                     }, { quoted: m })	}
                 break
@@ -1114,9 +1114,9 @@ deltaxcrash.sendMessage(m.chat, {
 ┗━━━━━━━━━━━━━━━━━
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  ` 
-deltaxcrash.sendMessage(m.chat, {
-                        video: fs.readFileSync('./menu.mp4'),
-                        caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
+deltaxcrash.sendMessage(m.chat, {                        
+                        photo: fs.readFileSync('./image/nulll.jpg'),
+                        caption: muna,
                         gifPlayback: true
                     }, { quoted: m })	}
                 break
@@ -1136,9 +1136,9 @@ let fuvk =
 ┗━━━━━━━━━━━━━━━━━
  © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
  `
-deltaxcrash.sendMessage(m.chat, {
-                        video: fs.readFileSync('./menu.mp4'),
-                        caption: `𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
+deltaxcrash.sendMessage(m.chat, {                     
+                        photo: fs.readFileSync('./image/nulll.jpg'),
+                        caption: fuvk,
                         gifPlayback: true
                     }, { quoted: m })	}
                 break
