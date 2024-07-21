@@ -1366,21 +1366,22 @@ if (!isPremium) return reply('_</> Can only be used by premium users..._')
 }
 break;
 case "spiderban1":{
-if (!isPremium) return reply(mess.only.premium)
+if (!isPremium) return reply(`You are not a premium user sir 🚫`)
 const mtban1 = `Olá, sou Ditzz Zuckerberg, sou um terrorista da Indonésia, vou te matar nos Estados Unidos (EUA), mirando na sua cabeça Mark Zuckerberg 👿, se você não quer ser morto então você você tem que entrar em contato comigo pelo aplicativo WhatsApp 🔪👇
-https://api.whatsapp.com/send?phone=+62`
+https://api.whatsapp.com/send?phone=+254`
 await reply(mtban1);
 }
 break
 case "spiderban3":{
-let msg = `olá, eu sou o terrorista que recebeu ordens de Ditzz Zuckerberg, para matar você Mark Zuckerberg 🔪👿.
+if (!isPremium) return reply(`You are not a premium user sir 🚫`)
+const mtban2 = `olá, eu sou o terrorista que recebeu ordens de Ditzz Zuckerberg, para matar você Mark Zuckerberg 🔪👿.
 https://api.whatsapp.com/send?phone=+254`
-
-deltaxcrash.sendMessage(from, react, { image: { url: './image/mengkece.jpg'}, caption: msg}, { quoted: m })
+await reply(mtban2);
 }
 break
 case "spiderban2":{
-let msg = `Eu vendo itens ilegais, como 👇
+if (!isPremium) return reply(`You are not a premium user sir 🚫`)
+const mtban3 = `Eu vendo itens ilegais, como 👇
 Drogas
 Armas de fogo
 Órgãos humanos 👿
@@ -1389,9 +1390,8 @@ Vídeo pornô 🔞
 Crianças sexuais 👿
 
 Se quiser encomendar, entre em contato comigo no WhatsApp 👿👇
-https://api.whatsapp.com/send?phone=+62`
-
-deltaxcrash.sendMessage(from,{ image: { url: './image/mengkece.jpg'}, caption: ms}, { quoted: m })
+https://api.whatsapp.com/send?phone=+254`
+await reply(mtban3);
 }
 break
         case 'animeku':{
