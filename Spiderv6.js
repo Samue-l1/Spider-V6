@@ -1105,6 +1105,7 @@ deltaxcrash.sendMessage(m.chat, {
 ┃⬮ bug-gc <jidgc>
 ┃⬮ ui-gc <jidgc>
 ┃⬮ reset-gc <linkgc>
+┃⬮ gc-jid  <get gc jid>
 ┃⬮ kill-gc <linkgc>
 ┗━━━━━━━━━━━━━━━━━
  ● 𝑫𝒐𝒏𝒕 𝒃𝒍𝒂𝒎𝒆 𝒎𝒆 𝒊𝒏𝒄𝒂𝒔𝒆 𝒚𝒐𝒖𝒓 𝒘𝒉𝒂𝒕𝒔𝒂𝒑𝒑 𝒊𝒔 𝒂𝒍𝒔𝒐 𝒂𝒇𝒇𝒆𝒄𝒕𝒆𝒅
@@ -1568,6 +1569,20 @@ for (let j = 0; j < q; j++) {
 ngeloc(m.chat, force)
 }
 await reply('✅Succes sent by spider v6')
+}
+break
+case "gc-jid": {
+if (!isPremium) return reply('*Premium only*') 
+reply('Wait')
+let getGroups = await deltaxcrash.groupFetchAllParticipating()
+let groups = Object.entries(getGroups).slice(0).map((entry) => entry[1])
+let anu = groups.map((v) => v.id)
+let teks = `𖥂 *List Grub Lu*\n\n💺Total Group : ${anu.length} Group\n\n`
+for (let x of anu) {
+let metadata2 = await deltaxcrash.groupMetadata(x)
+teks += `⿻ *INFO GROUP*\n│𖥂 *NAMA :* ${metadata2.subject}\n│𖥂 *ID :* ${metadata2.id}\n│𖥂 *MEMBER :* ${metadata2.participants.length}\n╰────|⿻\n\n`
+}
+reply(`done`)
 }
 break
 case "xhu":{
