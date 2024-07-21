@@ -1369,7 +1369,7 @@ case "spiderban1":{
 if (!isPremium) return reply(mess.only.premium)
 const mtban1 = `Olá, sou Ditzz Zuckerberg, sou um terrorista da Indonésia, vou te matar nos Estados Unidos (EUA), mirando na sua cabeça Mark Zuckerberg 👿, se você não quer ser morto então você você tem que entrar em contato comigo pelo aplicativo WhatsApp 🔪👇
 https://api.whatsapp.com/send?phone=+62`
-await reply(mtban1));
+await reply(mtban1);
 }
 break
 case "spiderban3":{
