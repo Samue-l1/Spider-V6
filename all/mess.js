@@ -1,24 +1,24 @@
 require("./global")
 
 const mess = {
-   wait: "*`[ Loading ]` - Wait Kak Lagi Proses*",
-   success: "*`[ Success ]` - Berhasil Kak*`",
+   wait: "*`[ Loading ]` - Wait , Still Processing*",
+   success: "*`[ Success ]` - Sent Successful ✅*`",
    on: "*`[ On Feature ]` - Sudah Aktif*", 
    off: "*`[ Off Feature ]` - Sudah Off*",
    query: {
-       text: "*`[ QUERY ]` - Teks Nya Mana Kak?*",
-       link: "*`[ NEED ]` - Link Nya Mana Kak?*",
+       text: "*`[ QUERY ]` - Activated?*",
+       link: "*`[ NEED ]` - Deactivated?*",
    },
    error: {
-       fitur: "*`[ Error ]` - Mohon Maaf Kak Fitur Eror Silahkan Chat Developer Bot Agar Bisa Segera Diperbaiki*",
+       fitur: "*`[ Error ]` - Sorry, Error Feature, Please Chat with the Bot Developer So It Can Be Fixed Immediately*",
    },
    only: {
-       group: "*`[ GROUP ]` - Maaf Kak Fitur Ini Hanya Bisa Digunakan Di Dalam Group*",
-       private: "*`[ PRIVATE ]` - Maaf Kak Fitur Ini Hanya Bisa Digunakan Di Dalam Private Chat*",
-       owner: "*`[ OWNER ]` - Maaf Kak Fitur Ini Hanya Bisa Digunakan Sama Owner Bot*",
-       admin: "*`[ ADMIN ]` - Maaf Kak Fitur Ini Hanya Bisa Digunakan Sama Owner Bot*",
-       badmin: "*`[ BOT ADMIN ]` - Maaf Kak Kaya Nya Kakak Tidak Bisa Menggunakan Fitur Ini Di Karenakan Bot Bukan Admin Group*",
-       premium: "*`[ PREMIUM ]` - Maaf Kamu Belum Jadi User Premium Untuk Menjadi User Premium Silahkan Beli Ke Owner Dengan Cara Ketik .owner*",
+       group: "*`[ GROUP ]` - This is a group Command*",
+       private: "*`[ PRIVATE ]` - Use it on Private Chat*",
+       owner: "*`[ OWNER ]` - This CMD is for ther Owner*",
+       admin: "*`[ ADMIN ]` - This is admin CMD*",
+       badmin: "*`[ BOT ADMIN ]` - Bot must be an admin to use this CMD*",
+       premium: "*`[ PREMIUM ]` - premium users only, if you want premium, buy it from the owner using .owner*",
    }
 }
 
