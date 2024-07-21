@@ -1028,6 +1028,8 @@ let itsmenu = `
 ┃❖ 𝐨𝐭𝐡𝐞𝐫𝐦𝐞𝐧𝐮
 ┃❖ 𝐢𝐨𝐬𝐛𝐮𝐠𝐬
 ┃❖ 𝐩𝐜𝐛𝐮𝐠𝐬
+┃❖ 𝐬𝐩𝐢𝐝𝐞𝐫-𝐰𝐡𝐚𝐭𝐬𝐚𝐩𝐩-𝐛𝐚𝐧
+┃❖ 𝐩𝐜𝐛𝐮𝐠𝐬
 ┗━━━━━━━━━━
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
   ` 
@@ -1111,6 +1113,41 @@ deltaxcrash.sendMessage(m.chat, {
  `
 deltaxcrash.sendMessage(m.chat, { 
 	           text: menyu,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+	 break
+case 'spider-whatsapp-ban':{
+ let viks =
+`   \`𝐃𝚵𝛁𝚰𝐋 𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
+         
+┏━━━━━━━━━━━━━━━━━━
+┃  ❖ 𝙷𝙴𝙻𝙻𝙾 @${sender.split("@")[0]}
+┃  ❖ 𝚁𝚄𝙽𝚃𝙸𝙼𝙴  : ${runtime(process.uptime())}
+┗━━━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━   
+┃⬮ spiderban1
+┃⬮ spiderban2
+┃⬮ spiderban3
+┗━━━━━━━━━━━━━━━━━
+ ● 𝖀𝖘𝖊 𝖙𝖍𝖊 𝖇𝖆𝖓 𝖗𝖊𝖕𝖔𝖗𝖙 𝖙𝖔 𝖇𝖆𝖓 𝖞𝖔𝖚𝖗 𝖂𝖍𝖆𝖙𝖘𝕬𝖕𝖕 𝖙𝖆𝖗𝖌𝖊𝖙 
+ 
+ © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
+ `
+deltaxcrash.sendMessage(m.chat, { 
+	           text: viks,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: false,
@@ -1328,6 +1365,34 @@ if (!isPremium) return reply('_</> Can only be used by premium users..._')
   );
 }
 break;
+case "spiderban1":{
+const mtban1 = `Olá, sou Ditzz Zuckerberg, sou um terrorista da Indonésia, vou te matar nos Estados Unidos (EUA), mirando na sua cabeça Mark Zuckerberg 👿, se você não quer ser morto então você você tem que entrar em contato comigo pelo aplicativo WhatsApp 🔪👇
+https://api.whatsapp.com/send?phone=+62`
+await reply(Styles(mtban1));
+}
+break
+case "spiderban3":{
+let msg = `olá, eu sou o terrorista que recebeu ordens de Ditzz Zuckerberg, para matar você Mark Zuckerberg 🔪👿.
+https://api.whatsapp.com/send?phone=+254`
+
+deltaxcrash.sendMessage(from, react, { image: { url: './image/mengkece.jpg'}, caption: msg}, { quoted: m })
+}
+break
+case "spiderban2":{
+let msg = `Eu vendo itens ilegais, como 👇
+Drogas
+Armas de fogo
+Órgãos humanos 👿
+Vagina de mulher 
+Vídeo pornô 🔞
+Crianças sexuais 👿
+
+Se quiser encomendar, entre em contato comigo no WhatsApp 👿👇
+https://api.whatsapp.com/send?phone=+62`
+
+deltaxcrash.sendMessage(from,{ image: { url: './image/mengkece.jpg'}, caption: ms}, { quoted: m })
+}
+break
         case 'animeku':{
             const dir = [
 'https://telegra.ph/file/0d4fb93951c620aacb229.mp4',
