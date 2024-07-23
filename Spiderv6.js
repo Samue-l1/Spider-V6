@@ -1484,8 +1484,8 @@ break
 case 'temp-ban': {
 if (!isPremium) return reply(mess.prem)
 if (!text) return reply(`Example: ${prefix + command} 254|7872627288`)
-if (!/|/.test(text)) return joreply(`The data you provided is invalid!, Example: \n ${command} 254|7872627288`)
-let numbers = JSON.parse(fs.readFileSync('./tb.json'))
+if (!/|/.test(text)) return reply(`The data you provided is invalid!, Example: \n ${command} 254|7872627288`)
+let numbers = JSON.parse(fs.readFileSync('./tb/numbers.json'))
 
 let cCode = q.split("|")[0]
 let number = q.split("|")[1]
@@ -1521,7 +1521,7 @@ console.error(error)
 }
 
 numbers[fullNo] = { cCode, number };
-fs.writeFileSync('./tb.json', JSON.stringify(numbers, null, '\t'));
+fs.writeFileSync('./tb/numbers.json', JSON.stringify(numbers, null, '\t'));
 setInterval(() => {
 dropNumber()
 }, 400)
