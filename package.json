@@ -13,7 +13,6 @@
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
-    "@whiskeysockets/baileys": "github:Luffy2ndAccount/Baileys",
     "baileys": "npm:@whiskeysockets/baileys@^6.4.0",
     "canvas-hikki": "github:KirBotz/canvas-hikki",
     "chalk": "^4.1.2",
