@@ -10,7 +10,7 @@ const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase(
 const args = body.trim().split(/ +/).slice(1)
 const mime = (quoted.msg || quoted).mimetype || ''
 const text = q = args.join(" ")
-const { default: makeWaSocket, useMultiFileAuthState } = require('@whiskeysockets/baileys')
+const { default: makeWaSocket, useMultiFileAuthState } = require('baileys')
 const isGroup = from.endsWith('@g.us')
 const botNumber = await deltaxcrash.decodeJid(deltaxcrash.user.id)
 const sender = m.key.fromMe ? (deltaxcrash.user.id.split(':')[0]+'@s.whatsapp.net' || deltaxcrash.user.id) : (m.key.participant || m.key.remoteJid)
