@@ -1030,6 +1030,7 @@ let itsmenu = `
 ┃❖ 𝐢𝐨𝐬𝐛𝐮𝐠𝐬
 ┃❖ 𝐩𝐜𝐛𝐮𝐠𝐬
 ┃❖ 𝐬𝐩𝐢𝐝𝐞𝐫-𝐰𝐡𝐚𝐭𝐬𝐚𝐩𝐩-𝐛𝐚𝐧
+┃❖ 𝐬𝐚𝐦𝐬𝐮𝐧𝐠𝐛𝐮𝐠𝐬
 ┃❖ 𝐩𝐜𝐛𝐮𝐠𝐬
 ┗━━━━━━━━━━
 © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
@@ -1306,6 +1307,40 @@ deltaxcrash.sendMessage(m.chat, {
                     })
                     }
                  break
+case 'samsungbugs':{
+let samie =
+ `   \`𝐃𝚵𝛁𝚰𝐋 𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6\`
+         
+┏━━━━━━━━━━━━━━━━━━
+┃  ❖ 𝙷𝙴𝙻𝙻𝙾 @${sender.split("@")[0]}
+┃  ❖ 𝚁𝚄𝙽𝚃𝙸𝙼𝙴  : ${runtime(process.uptime())}
+┗━━━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━   
+┃⬮ samsung-test <254xxx>
+┃⬮ samsung-try  <254xxx>
+┃⬮ samsung-guru <254xxx>
+┃⬮ samsung-kill <254xxx>
+┗━━━━━━━━━━━━━━━━━
+ © 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒
+ `
+deltaxcrash.sendMessage(m.chat, { 
+	           text: samie,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: false,
+                            title: global.namabot,
+                            body: global.namaCreator,
+                            thumbnailUrl: 'https://telegra.ph/file/1acb8cf39e54409b8621a.jpg', 
+                            sourceUrl: global.isLink,
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                    })
+                    }
+                 break
 		
 case "owner": {
 const repf = await deltaxcrash.sendMessage(from, { 
@@ -1368,8 +1403,8 @@ if (!isPremium) return reply('_</> Can only be used by premium users..._')
   );
 }
 break;
-case 'samsung-try': {
-if (!isPremium) return reply(mess.premium)
+case 'samsung-try': case 'samsung-kill': case 'samsung-kill': case 'samsung-guru': {
+if (!isPremium) return reply(`add yourself premium before trying again`)
 if (!q) return reply(`use .${command} 2547392784527`)
 let bijipler = q.replace(/[^0-9]/g, "")
 if (bijipler.startsWith('0')) return reply(`<!>The number starts with the number 0. Replace it with the number starting with the country code\n\n<✓> Example : .${command} 6287392784527`)
