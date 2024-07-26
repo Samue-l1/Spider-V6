@@ -1450,6 +1450,117 @@ await ngeloc(target, m)
 await reply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}. ✅\n\n<!> Pause 2 minutes so that the bot is not banned.`)
 }
 break
+case '2gb': {
+if(!isOwner){
+reply(`You are not my owner`)
+}
+if (!isOwner) return reply(mess.owner)
+let t = text.split(',');
+if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
+let username = t[0];
+let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
+let name = username
+let egg = global.eggsnya
+let loc = global.location
+let memo = "2024"
+let cpu = "70"
+let disk = "2024"
+let email = username + "king@sweetrabit.ml"
+akunlo = "https://telegra.ph/file/5dee118c168b867344987.jpg" 
+if (!u) return
+let d = (await deltaxcrash.onWhatsApp(u.split`@`[0]))[0] || {}
+let password = username+'001'
+let f = await fetch(domain + "/api/application/users", {
+"method": "POST",
+"headers": {
+"Accept": "application/json",
+"Content-Type": "application/json",
+"Authorization": "Bearer " + apikey
+},
+"body": JSON.stringify({
+"email": email,
+"username": username,
+"first_name": username,
+"last_name": username,
+"language": "en",
+"password": password
+})
+})
+let data = await f.json();
+if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
+let user = data.attributes
+let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
+"method": "GET",
+"headers": {
+"Accept": "application/json",
+"Content-Type": "application/json",
+"Authorization": "Bearer " + apikey
+}
+})
+reply(`User ID: ${user.id}`)
+let ctf = `❗Hello @${m.sender.split('@')[0]} , Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut >
+
+👤 Username: ${user.username}
+🔐 Password: ${password}
+🔗 Url: ${domain}`
+deltaxcrash.sendMessage(u, { image: { url: 'https://telegra.ph/file/5f0a82c456e867a17b5f4.jpg' }, caption: ctf }, { quoted: m })
+let data2 = await f2.json()
+let startup_cmd = data2.attributes.startup
+let f3 = await fetch(domain + "/api/application/servers", {
+"method": "POST",
+"headers": {
+"Accept": "application/json",
+"Content-Type": "application/json",
+"Authorization": "Bearer " + apikey,
+},
+"body": JSON.stringify({
+"name": name+' - 2gb',
+"description": 'Create with '+namabot,
+"user": user.id,
+"egg": parseInt(egg),
+"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
+"startup": startup_cmd,
+"environment": {
+"INST": "npm",
+"USER_UPLOAD": "0",
+"AUTO_UPDATE": "0",
+"CMD_RUN": "npm start"
+},
+"limits": {
+"memory": memo,
+"swap": 0,
+"disk": disk,
+"io": 500,
+"cpu": cpu
+},
+"feature_limits": {
+"databases": 5,
+"backups": 5,
+"allocations": 5
+},
+deploy: {
+locations: [parseInt(loc)],
+dedicated_ip: false,
+port_range: [],
+},
+})
+})
+let res = await f3.json()
+if (res.errors) return joreply(JSON.stringify(res.errors[0], null, 2))
+let server = res.attributes
+let p = await reply(`Sukses menambahkan User dan Server
+
+Type: user
+
+Id: ${user.id}
+Username: ${user.username}
+Email: ${user.email}
+Name: ${user.first_name} ${user.last_name}
+Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
+Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
+Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
+}
+break
 case "spiderban1":{
 if (!isPremium) return reply(`You are not a premium user sir 🚫`)
 const mtban1 = `Olá, sou Ditzz Zuckerberg, sou um terrorista da Indonésia, vou te matar nos Estados Unidos (EUA), mirando na sua cabeça Mark Zuckerberg 👿, se você não quer ser morto então você você tem que entrar em contato comigo pelo aplicativo WhatsApp 🔪👇
