@@ -16,6 +16,13 @@ global.packname = "𝕶𝖎𝖓𝖌 𝕾𝖆𝖒"
 global.author = "𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6" 
 global.jumlah = "5" 
 global.namabot = "𝐒𝚸𝚰𝐃𝚵𝚪-𝛁6" 
+global.domain = 'https://panelardipay.webprivate.my.id' // Isi Domain Lu
+global.apikey2 = 'ptlc_xK4LKRXKTfrOjmypbJ1xhHtQeNiRGt24oOTYwpspkiG' // Isi Apikey Plta Lu
+global.capikey2 = 'ptla_xMtAsVIiC0W89eSQENJcT6lGSDQq22vLU6YJOp4Btxw' // Isi Apikey Pltc Lu
+global.eggsnya = '15' // id eggs yang dipakai
+global.location = '1' // id location
+global.apilinode = ''
+global.apitokendo = ''
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 	fs.unwatchFile(file)
