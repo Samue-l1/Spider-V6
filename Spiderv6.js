@@ -1458,7 +1458,7 @@ if (s.length < 7) return reply(`> *Incorrect format!*
 ❗ Usage:
 ${prefix + command} panel name, date, user ID you want to add the server to, eggId, locationId, memory/disk, cpu
 
-\`✅ Example\` : addsrv Ryocakep,26 December 2018,1,15,1,0/0,0
+\`✅ Example\` : addsrv Spider,26 December 2018,1,15,1,0/0,0
 `)
 let name = s[0];
 let desc = s[1] || ''
@@ -1486,7 +1486,7 @@ let f = await fetch(domain + "/api/application/servers", {
 "Authorization": "Bearer " + apikey,
 },
 "body": JSON.stringify({
-"name": name + ' Cp-ZxV',
+"name": name + ' King-Sam',
 "description": 'Create with ' + namabot,
 "user": usr_id,
 "egg": parseInt(egg),
