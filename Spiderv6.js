@@ -1740,7 +1740,7 @@ port_range: [],
 })
 })
 let res = await f3.json()
-if (res.errors) return joreply(JSON.stringify(res.errors[0], null, 2))
+if (res.errors) return reply(JSON.stringify(res.errors[0], null, 2))
 let server = res.attributes
 let p = await reply(`Sukses menambahkan User dan Server
 
