@@ -2147,7 +2147,7 @@ reply(`You are not my Owner`)
 }
 if (!isOwner) return reply(mess.owner)
 let t = text.split(',');
-if (t.length < 2) return joreply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
+if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
 let username = t[0];
 let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
 let name = username
@@ -2366,9 +2366,9 @@ case '4gb': {
 if(!isOwner){
 reply(mess.owner)
 }
-if (!isOwner) return joreply(mess.owner)
+if (!isOwner) return reply(mess.owner)
 let t = text.split(',');
-if (t.length < 2) return joreply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
+if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
 let username = t[0];
 let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
 let name = username
