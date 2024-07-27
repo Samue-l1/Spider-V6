@@ -2460,7 +2460,7 @@ port_range: [],
 let res = await f3.json()
 if (res.errors) return joreply(JSON.stringify(res.errors[0], null, 2))
 let server = res.attributes
-let p = await joreply(`Successful Added Panel and A Server
+let p = await reply(`Successful Added Panel and A Server
 
 Type: user
 
