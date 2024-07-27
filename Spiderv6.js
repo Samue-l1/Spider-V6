@@ -1535,6 +1535,114 @@ CPU: \`${server.limits.cpu}%\`
 CREATED AT: ${server.created_at}\``)
 }
 break
+case 'unli': {
+if (!isOwner) return reply(`You cannot get a panel because u are not my owner gay 💀`)
+let t = text.split(',');
+if (t.length < 2) return reply(`use:\n${prefix + command} user,number`)
+let username = t[0];
+let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
+let name = username
+let egg = global.eggsnya
+let loc = global.location
+let memo = "0"
+let cpu = "0"
+let disk = "0"
+let email = username + "kingsam@sweetrabit.ml"
+akunlo = "https://telegra.ph/file/3879ada0f622f5843b662.jpg" 
+if (!u) return
+let d = (await deltaxcrash.onWhatsApp(u.split`@`[0]))[0] || {}
+let password = username+'001'
+let f = await fetch(domain + "/api/application/users", {
+"method": "POST",
+"headers": {
+"Accept": "application/json",
+"Content-Type": "application/json",
+"Authorization": "Bearer " + apikey
+},
+"body": JSON.stringify({
+"email": email,
+"username": username,
+"first_name": username,
+"last_name": username,
+"language": "en",
+"password": password
+})
+})
+let data = await f.json();
+if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
+let user = data.attributes
+let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
+"method": "GET",
+"headers": {
+"Accept": "application/json",
+"Content-Type": "application/json",
+"Authorization": "Bearer " + apikey
+}
+})
+reply(`User ID: ${user.id}`)
+let ctf = `❗Hello @${m.sender.split('@')[0]} , 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒 Just Gave You Access To The Following Account Panel > >
+
+👤 Username: ${user.username}
+🔐 Password: ${password}
+🔗 Url: ${domain}`
+deltaxcrash.sendMessage(u, { image: { url: 'https://telegra.ph/file/7f1e9da89011736a82473.jpg' }, caption: ctf }, { quoted: m })
+let data2 = await f2.json()
+let startup_cmd = data2.attributes.startup
+let f3 = await fetch(domain + "/api/application/servers", {
+"method": "POST",
+"headers": {
+"Accept": "application/json",
+"Content-Type": "application/json",
+"Authorization": "Bearer " + apikey,
+},
+"body": JSON.stringify({
+"name": name+' - Unlimited',
+"description": 'Create with '+namabot,
+"user": user.id,
+"egg": parseInt(egg),
+"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
+"startup": startup_cmd,
+"environment": {
+"INST": "npm",
+"USER_UPLOAD": "0",
+"AUTO_UPDATE": "0",
+"CMD_RUN": "npm start"
+},
+"limits": {
+"memory": memo,
+"swap": 0,
+"disk": disk,
+"io": 500,
+"cpu": cpu
+},
+"feature_limits": {
+"databases": 5,
+"backups": 5,
+"allocations": 5
+},
+deploy: {
+locations: [parseInt(loc)],
+dedicated_ip: false,
+port_range: [],
+},
+})
+})
+let res = await f3.json()
+if (res.errors) return reply(JSON.stringify(res.errors[0], null, 2))
+let server = res.attributes
+let p = await reply(`Succeful added user and server
+
+Type: user
+
+Id: ${user.id}
+Username: ${user.username}
+Email: ${user.email}
+Name: ${user.first_name} ${user.last_name}
+Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
+Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
+Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
+}
+break
 
 case '2gb': {
 if(!isOwner){
