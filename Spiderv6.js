@@ -1518,7 +1518,7 @@ port_range: [],
 })
 })
 let res = await f.json()
-if (res.errors) return joreply(JSON.stringify(res.errors[0], null, 2))
+if (res.errors) return reply(JSON.stringify(res.errors[0], null, 2))
 let server = res.attributes
 reply(`
 ❗ *SUCCESSFULLY ADD SERVER*
