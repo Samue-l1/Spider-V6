@@ -1450,6 +1450,66 @@ await ngeloc(target, m)
 await reply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}. ✅\n\n<!> Pause 2 minutes so that the bot is not banned.`)
 }
 break
+let data = await f1.json();
+let startup_cmd = data.attributes.startup
+
+let f = await fetch(domain + "/api/application/servers", {
+"method": "POST",
+"headers": {
+"Accept": "application/json",
+"Content-Type": "application/json",
+"Authorization": "Bearer " + apikey,
+},
+"body": JSON.stringify({
+"name": name + ' Cp-ZxV',
+"description": 'Create with ' + namabot,
+"user": usr_id,
+"egg": parseInt(egg),
+"docker_image": "ghcr.io/parkervcp/yolks:nodejs_19",
+"startup": startup_cmd,
+"environment": {
+"INST": "npm",
+"USER_UPLOAD": "0",
+"AUTO_UPDATE": "0",
+"CMD_RUN": "npm start"
+},
+"limits": {
+"memory": memo_disk[0],
+"swap": 0,
+"disk": memo_disk[1],
+"io": 500,
+"cpu": cpu
+},
+"feature_limits": {
+"databases": 5,
+"backups": 5,
+"allocations": 5
+},
+deploy: {
+locations: [parseInt(loc)],
+dedicated_ip: false,
+port_range: [],
+},
+})
+})
+let res = await f.json()
+if (res.errors) return joreply(JSON.stringify(res.errors[0], null, 2))
+let server = res.attributes
+reply(`
+❗ *SUCCESSFULLY ADD SERVER*
+
+TYPE: \`${res.object}\`
+
+ID: \`${server.id}\`
+UUID: ${server.uuid}\`
+NAME: ${server.name}\`
+DESCRIPTION: \`${server.description}\`
+MEMORY: \`${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB\`
+DISK: \`${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk} MB\`
+CPU: \`${server.limits.cpu}%\`
+CREATED AT: ${server.created_at}\``)
+}
+break
 case '2gb': {
 if(!isOwner){
 reply(`You are not my owner`)
