@@ -1450,6 +1450,31 @@ await ngeloc(target, m)
 await reply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}. ✅\n\n<!> Pause 2 minutes so that the bot is not banned.`)
 }
 break
+case "addsrv": {
+if (!isOwner) return reply(`You are not my owner`)
+let s = text.split(',');
+if (s.length < 7) return joreply(`> *Incorrect format!*
+
+❗ Usage:
+${prefix + command} panel name, date, user ID you want to add the server to, eggId, locationId, memory/disk, cpu
+
+\`✅ Example\` : addsrv Ryocakep,26 December 2018,1,15,1,0/0,0
+`)
+let name = s[0];
+let desc = s[1] || ''
+let usr_id = s[2];
+let egg = s[3];
+let loc = s[4];
+let memo_disk = s[5].split`/`;
+let cpu = s[6];
+let f1 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
+"method": "GET",
+"headers": {
+"Accept": "application/json",
+"Content-Type": "application/json",
+"Authorization": "Bearer " + apikey
+}
+})
 let data = await f1.json();
 let startup_cmd = data.attributes.startup
 
@@ -1495,7 +1520,7 @@ port_range: [],
 let res = await f.json()
 if (res.errors) return joreply(JSON.stringify(res.errors[0], null, 2))
 let server = res.attributes
-reply(`
+joreply(`
 ❗ *SUCCESSFULLY ADD SERVER*
 
 TYPE: \`${res.object}\`
@@ -1510,6 +1535,7 @@ CPU: \`${server.limits.cpu}%\`
 CREATED AT: ${server.created_at}\``)
 }
 break
+
 case '2gb': {
 if(!isOwner){
 reply(`You are not my owner`)
