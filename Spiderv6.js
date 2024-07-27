@@ -1453,7 +1453,7 @@ break
 case "addsrv": {
 if (!isOwner) return reply(`You are not my owner`)
 let s = text.split(',');
-if (s.length < 7) return joreply(`> *Incorrect format!*
+if (s.length < 7) return reply(`> *Incorrect format!*
 
 ❗ Usage:
 ${prefix + command} panel name, date, user ID you want to add the server to, eggId, locationId, memory/disk, cpu
@@ -1520,7 +1520,7 @@ port_range: [],
 let res = await f.json()
 if (res.errors) return joreply(JSON.stringify(res.errors[0], null, 2))
 let server = res.attributes
-joreply(`
+reply(`
 ❗ *SUCCESSFULLY ADD SERVER*
 
 TYPE: \`${res.object}\`
