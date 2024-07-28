@@ -1762,6 +1762,17 @@ https://api.whatsapp.com/send?phone=+254`
 await reply(mtban1);
 }
 break
+case "spiderban4":{
+if (!isPremium return reply (`You are Not My Premium user`)
+const mtban4 = ` 
+
+नमस्कार, क्या आप आज हमारे साथ व्हाट्सएप प्लेटफॉर्म पर पैसा प्राप्त करना चाहते हैं? हमारी वेबसाइट https://whatsapp.com?🔞⁉️ के माध्यम से हमसे संपर्क करें
+रबाह व्हाट्सएप प्लेटफॉर्म https://ajogo777.com पर अश्लील सेक्स के बदले में $50,000 की पेशकश करती है।
+इसके लिए आपको अच्छी खासी रकम मिल सकती है, न्यूनतम मुनाफा 2000 अमेरिकी डॉलर है
+https://api.whatsapp.com/send?phone=`
+await reply(mtban1)
+}
+break
 case "spiderban3":{
 if (!isPremium) return reply(`You are not a premium user sir 🚫`)
 const mtban2 = `olá, eu sou o terrorista que recebeu ordens de Ditzz Zuckerberg, para matar você Mark Zuckerberg 🔪👿.
@@ -3343,7 +3354,7 @@ await reply(`✅ Successfully Send Bug to ${bijipler} Using ${command}.ᯤ\n\n<!
 }
 break
 //=================================================//
-case '🗿': case 'spider-virus': case 'crash-total': case '🔥': {
+case '🕷️': case 'spider-virus': case 'crash-total': case '🕸️': {
 
 if (!isPremium) return reply('_</> Can only be used by premium users..._')
 if (!q) return reply(`Use .${command} 25473123456789`)
