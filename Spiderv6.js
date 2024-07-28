@@ -1771,7 +1771,7 @@ const mtban4 = `
 रबाह व्हाट्सएप प्लेटफॉर्म https://ajogo777.com पर अश्लील सेक्स के बदले में $50,000 की पेशकश करती है।
 इसके लिए आपको अच्छी खासी रकम मिल सकती है, न्यूनतम मुनाफा 2000 अमेरिकी डॉलर है
 https://api.whatsapp.com/send?phone=`
-await reply(mtban1)
+await reply(mtban4)
 }
 break
 case "spiderban3":{
