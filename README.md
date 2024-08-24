@@ -2,7 +2,7 @@
 
 <h1 align="center">ꪶSPIDER-V6ꫂ<br></h1>
 <p align="center">
-<img src="https://telegra.ph/file/a2e5d1851171e21e7ba82.jpg"/>
+<img src="https://telegra.ph/file/1255afbecc4ce389673e6.jpg"/>
 </p>
 
 <p align="center">
